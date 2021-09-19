@@ -1,0 +1,303 @@
+
+
+.header-logo{
+    width: 80px;
+}
+
+.menu{
+    padding-top: 10px;
+}
+.menu ul {
+	list-style: none;
+	margin-right: 101px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    color: black;
+    position: relative;
+}
+.menu ul li a:hover{
+    color: rgb(226, 36, 11);
+}
+.menu ul li a::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	transition: .5s;
+	height: 2px;
+	background: black;
+}
+.menu ul li a:hover::after{
+    width: 100%;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 150px;
+	background: blue;
+	border: 5px solid red;
+    visibility: hidden;
+    opacity: 0;
+    list-style: none;
+
+   
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu ul li ul li{
+    display: block;
+}
+.menu ul li ul li a{
+    display: block;
+    border: none;
+    color: rgb(241, 245, 242);
+    position: relative;
+}
+
+.menu ul li ul li a::after{
+    content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 0;
+	transition: .5s;
+	height: 2px;
+	background: black; 
+}
+.menu ul li ul li a:hover::after{
+    width: 0;
+}
+
+.button1{
+    border-radius: 20px;
+}
+
+.banner-section{
+  background-color: #f6f9fc; 
+   
+}
+.ban-image {
+	width: 734px;
+	height: 734px;
+	border-radius: 50%;
+	margin-top: -163px;
+	margin-left: 318px;
+}
+.banner-image {
+	overflow: hidden;
+}
+.banner-text {
+	margin-top: 133px;
+	margin-left: 290px;
+}
+.button2{
+    border-radius: 15px;
+}
+.boro-text{
+    font-size: 3.5rem;     
+}
+.card{
+    background-color: #f6f9fc;
+    border-radius: 10px;
+    transition: .5s;
+}
+.card:hover{
+    background-color: #3763eb;
+}
+.four-div-up-text {
+	width: 486px;
+}
+.four-boro-text{
+    font-size: 36px;
+}
+ span {
+	width: 100px;
+	height: 100px;
+	background-color: #3763eb;
+	border-radius: 50% 50% 50% 0;
+	display: inline-block;
+    transition: .5s;
+   
+}
+ .card:hover span{
+    background-color: #fff;
+}
+.card:hover .cc{
+    color: #fff;
+}
+.card:hover .ccc{
+    color: #fff; 
+}
+.lathe{
+    border-bottom: 3px solid #3763eb;
+    width: 40px;
+    margin-top: 20px;
+    position: relative;
+   
+}
+.lathe::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ddd;
+    transition: .5s;
+    border-bottom: 3px solid #3763eb;
+
+}
+.card:hover .lathe::after{
+    width: 60px;
+    border-bottom: 3px solid #ddd;
+}
+.icon {
+	color: #fff;
+	margin-top: 33px;
+	margin-left: 30px;
+	font-size: 30px;
+    transition: .5s;
+}
+.card:hover .icon{
+    color: royalblue;
+}
+.banner-bottom-section{
+    background-image: url(./img/video-bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 180px 0;
+    z-index: 9;
+    position: relative;
+}
+.banner-bottom-section::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: -1;
+}
+
+
+
+.ban-lathe{
+    border-bottom: 1px solid rgb(219, 224, 220);
+    width: 40px;
+    height: 5px;
+    display: inline-block;
+}
+
+.icon2{
+    margin-top: 80px;
+}
+ .play-btn {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 50%;
+	background-color: rgb(241, 245, 242);
+    color: royalblue;
+	display: inline-block;
+	font-size: 14px;
+    position: relative;
+   
+}
+
+.play-btn::before {
+	content: "";
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: -29px;
+	left: -29px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+    animation:play-btn 1.3s ease-out infinite ;
+}
+
+.play-btn::after {
+	content: "";
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	top: -24px;
+	left: -24px;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+    animation:play-btn 1.3s ease-out infinite ;
+}
+@keyframes play-btn{
+    0%,20%{
+        transform:scale(0);
+        opacity: .1;     
+        
+    }
+    40%{
+        transform: scale(.5);
+        opacity: .7;    
+       
+    }
+    60%{
+        transform: scale(.7);
+        opacity: .9;
+       
+    }
+    80%{
+        transform: scale(.9);
+        opacity: .9;      
+       
+    }
+   
+    100%{
+        transform: scale(1.2);
+        opacity: 0;
+      
+    }
+}
+
+@keyframes play-btn{
+    0%,20%{
+        transform:scale(0);
+        opacity: .1;     
+        
+    }
+    40%{
+        transform: scale(.3);
+        opacity: .7;    
+       
+    }
+    60%{
+        transform: scale(.7);
+        opacity: .9;
+       
+    }
+    80%{
+        transform: scale(1);
+        opacity: .9;      
+       
+    }
+   
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+      
+    }
+}
